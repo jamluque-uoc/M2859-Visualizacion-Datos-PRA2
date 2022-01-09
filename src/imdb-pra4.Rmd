@@ -1,0 +1,89 @@
+---
+title: "Visualización de datos - PRA2 - UOC"
+author: "Autor: José Ángel Martínez Luque"
+date: "09 Enero 2022"
+output:
+  html_document:
+    highlight: default
+    number_sections: yes
+    theme: cosmo
+    toc: yes
+    toc_depth: 3
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+```{r echo=FALSE, message=FALSE}
+library(tidyverse)
+library(scales)
+library(dplyr)
+options(readr.show_col_types = FALSE)
+```
+
+```{r echo=TRUE, message=TRUE}
+df_actors <- read_tsv('name.basics.tsv', na = "\\N", quote = '') %>%
+                filter(str_detect(primaryProfession, "actor|actress"))  %>%
+                select(nconst, primaryName, birthYear)
+```
+
+```{r}
+df_principals <- read_tsv('title.principals.tsv', na = "\\N", quote = '') %>%
+  filter(str_detect(category, "actor|actress")) %>%
+  select(tconst, ordering, nconst, category) %>%
+  group_by(tconst) %>%
+  filter(ordering == min(ordering))
+```
+
+```{r}
+df_ratings <- read_tsv('title.ratings.tsv', na = "\\N", quote = '')
+```
+
+```{r}
+df_principals <- df_principals %>% left_join(df_actors)
+df_ratings <- df_ratings %>% left_join(df_principals)
+```
+
+```{r}
+df_basics <- read_tsv('title.basics.tsv', na = "\\N", quote = '')
+```
+
+```{r}
+df_ratings <- df_ratings %>% left_join(df_basics)
+```
+
+```{r}
+df_ratings_movies <- df_ratings %>%
+                        filter(titleType == "movie", !is.na(birthYear), numVotes >= 10) %>%
+                        mutate(age_lead = startYear - birthYear)
+```
+
+```{r}
+df_actor_ages_lead <- df_ratings_movies %>%
+                  group_by(startYear, category) %>%
+                  summarize(low_age = quantile(age_lead, 0.25, na.rm = T),
+                            med_age = quantile(age_lead, 0.50, na.rm = T),
+                            high_age = quantile(age_lead, 0.75, na.rm = T))
+```
+
+```{r}
+ggplot(df_actor_ages_lead %>% filter(startYear >= 1915), aes(x = startYear, fill=category, color=category)) +
+          geom_ribbon(aes(ymin=low_age, ymax=high_age), alpha=0.2, size=0) +
+          geom_line(aes(y=med_age)) +
+          scale_fill_brewer(palette="Set1") +
+          scale_color_brewer(palette="Set1") +
+          labs(title="Edades de los actores / actrices principales de películas a lo largo del tiempo",
+               x="Año de estreno de la película",
+               y="Edad del actor / actriz principal",
+               caption="IMDB",
+               fill='',
+               color='')
+```
+
+
+
+
+
