@@ -1,4 +1,7 @@
 ## UOC - M2.859 - Visualización de datos
+
+*Autor:* _José Ángel Martínez Luque_
+
 ### A9: Creación de la visualización y entrega del proyecto (Práctica)
 
 Se ha tomado como base los datos publicados por la web [IMDB](https://www.imdb.com/interfaces/), con el objetivo principal, obtener la información sobre los generos de peliculas (movies) a lo largo de los años de lo que se tiene información en esta web.
