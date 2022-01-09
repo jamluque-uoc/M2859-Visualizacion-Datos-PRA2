@@ -29,7 +29,7 @@ Las fuentes se encuentran en el siguiente link de [github](https://github.com/ja
 ![Images](/img/hierarchy.png)
 
 
-### Extra: Prespectiva de genero
+### *_Extra_* : Prespectiva de genero
 
 Me ha parecido interesante incluir, asi lo añado como extra, una comparación de Actrices y Actores principales de peliculas por edad.
 
