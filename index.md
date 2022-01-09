@@ -19,12 +19,15 @@ Se ha intentado plasmar en el conjunto de visualizaciónes, como se han ido crea
 Las fuentes se encuentran en el siguiente link de [github](https://github.com/jamluque-uoc/M2859-Visualizacion-Datos-PRA2/tree/gh-pages)
 
 [Número de películas por género por año de estreno - Bar chart race](https://public.flourish.studio/visualisation/8334735/)
+![Images](/img/bar_chart_race.png)
 
 
 [Número de películas por género (1896-2028) - Scatter](https://public.flourish.studio/visualisation/8334891/)
+![Images](/img/scatter.png)
 
 
 [Géneros cinematográficos por año (1896-2022) - Hierarchy](https://public.flourish.studio/visualisation/8334545/)
+![Images](/img/hierarchy.png)
 
 
 #### El proceso de creación siguió y decisiones de diseño que se han tomado a lo largo del desarrollo.
