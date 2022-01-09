@@ -1,37 +1,41 @@
-## Welcome to GitHub Pages
+## UOC - M2.859 - Visualización de datos
+### A9: Creación de la visualización y entrega del proyecto (Práctica)
 
-You can use the [editor on GitHub](https://github.com/jamluque-uoc/M2859-Visualizacion-Datos-PRA2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Se ha tomado como base los datos publicados por la web [IMDB](https://www.imdb.com/interfaces/), con el objetivo principal, obtener la información sobre los generos de peliculas (movies) a lo largo de los años de lo que se tiene información en esta web.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Para obtener esta información se ha necesitado dos archivos "tsv":
+- title.basics
+- title.ratings
 
-### Markdown
+A partir de aqui se han creado dos csv con la información a mostrar en los diferentes graficos de la web _flourish.studio_ que es mas facil trabajar:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- year_genre.csv
+- year_genre_sum.csv
 
-```markdown
-Syntax highlighted code block
+Se ha intentado plasmar en el conjunto de visualizaciónes, como se han ido creando y apareciendo nuevos generos cinematograficos a lo largo de los años, y cual es el genero mas predominante.
 
-# Header 1
-## Header 2
-### Header 3
+#### El proceso de creación siguió y decisiones de diseño que se han tomado a lo largo del desarrollo.
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+#### La presentación in situ de la visualización, es decir, comentar sobre las características de la visualización mientras navega.
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+#### El conjunto de datos que se muestran.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+#### Las preguntas que contengan la vista.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jamluque-uoc/M2859-Visualizacion-Datos-PRA2/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+#### Los elementos interactivos disponibles como parte de la pantalla.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+### Extra: Prespectiva de genero
+
+Me ha parecido interesante incluir, asi lo añado como extra, una comparación de Actrices y Actores principales de peliculas por edad.
+
+[Comparativa de edades de actrices y actores principales de peliculas desde 1925 hasta 2022](/html/imdb-pra4_actor_actriz_edad.html)
+
+![Images](/img/actores_actrices.png)
+
+[source](https://minimaxir.com/2018/07/imdb-data-analysis/)
+
