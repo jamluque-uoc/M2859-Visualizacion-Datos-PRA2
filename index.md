@@ -4,17 +4,16 @@
 Se ha tomado como base los datos publicados por la web [IMDB](https://www.imdb.com/interfaces/), con el objetivo principal, obtener la información sobre los generos de peliculas (movies) a lo largo de los años de lo que se tiene información en esta web.
 
 Para obtener esta información se ha necesitado dos archivos "tsv":
-- title.basics
-- title.ratings
+- title.basics.tsv
+- title.ratings.tsv
 
-A partir de aqui se han creado dos csv con la información a mostrar en los diferentes graficos de la web _flourish.studio_ que es mas facil trabajar:
+A partir de aqui se han creado dos csv con la información a mostrar en los diferentes graficos de la web _flourish.studio_ que es mas facil trabajar
+[Extracción de información de ficheros tsv a csv](/html/imdb-pra4_gerenos_peliculas.html):
 
 - year_genre.csv
 - year_genre_sum.csv
 
 Se ha intentado plasmar en el conjunto de visualizaciónes, como se han ido creando y apareciendo nuevos generos cinematograficos a lo largo de los años, y cual es el genero mas predominante.
-
-[Extracción de información de ficheros tsv a csv](/html/imdb-pra4_gerenos_peliculas.html)
 
 Las fuentes se encuentran en el siguiente link de [github](https://github.com/jamluque-uoc/M2859-Visualizacion-Datos-PRA2/tree/gh-pages)
 
@@ -28,21 +27,6 @@ Las fuentes se encuentran en el siguiente link de [github](https://github.com/ja
 
 [Géneros cinematográficos por año (1896-2022) - Hierarchy](https://public.flourish.studio/visualisation/8334545/)
 ![Images](/img/hierarchy.png)
-
-
-#### El proceso de creación siguió y decisiones de diseño que se han tomado a lo largo del desarrollo.
-
-
-#### La presentación in situ de la visualización, es decir, comentar sobre las características de la visualización mientras navega.
-
-
-#### El conjunto de datos que se muestran.
-
-
-#### Las preguntas que contengan la vista.
-
-
-#### Los elementos interactivos disponibles como parte de la pantalla.
 
 
 ### Extra: Prespectiva de genero
