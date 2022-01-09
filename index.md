@@ -14,6 +14,8 @@ A partir de aqui se han creado dos csv con la información a mostrar en los dife
 
 Se ha intentado plasmar en el conjunto de visualizaciónes, como se han ido creando y apareciendo nuevos generos cinematograficos a lo largo de los años, y cual es el genero mas predominante.
 
+[Extracción de información de ficheros tsv a csv](/html/imdb-pra4_gerenos_peliculas.html)
+
 #### El proceso de creación siguió y decisiones de diseño que se han tomado a lo largo del desarrollo.
 
 
