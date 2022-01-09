@@ -21,6 +21,11 @@ Las fuentes se encuentran en el siguiente link de [github](https://github.com/ja
 [Número de películas por género por año de estreno - Bar chart race](https://public.flourish.studio/visualisation/8334735/)
 
 
+[Número de películas por género (1896-2028) - Scatter](https://public.flourish.studio/visualisation/8334891/)
+
+
+[Géneros cinematográficos por año (1896-2022) - Hierarchy](https://public.flourish.studio/visualisation/8334545/)
+
 
 #### El proceso de creación siguió y decisiones de diseño que se han tomado a lo largo del desarrollo.
 
