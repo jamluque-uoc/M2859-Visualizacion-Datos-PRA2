@@ -7,6 +7,8 @@ Para obtener esta información se ha necesitado dos archivos "tsv":
 - title.basics.tsv
 - title.ratings.tsv
 
+*No se han incluido los ficheros fuentes en la carpeta src por ser fichero de tamaño elevado, entre 20mb y 2gb
+
 A partir de aqui se han creado dos csv con la información a mostrar en los diferentes graficos de la web _flourish.studio_ que es mas facil trabajar
 [Extracción de información de ficheros tsv a csv](/html/imdb-pra4_gerenos_peliculas.html):
 
